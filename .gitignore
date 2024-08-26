@@ -1,0 +1,7 @@
+# Ignorar archivos de configuración
+config.ini
+settings.json
+
+# Ignorar carpetas de datos sensibles
+data/
+secret/
