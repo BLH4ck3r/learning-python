@@ -3,7 +3,7 @@ from Utilidades.matriz import validar_operaciones, validar_multiplicacion
 def sumar_matriz(matriza, matrizb):
     from Clases.matriz import Matriz
     if validar_operaciones(matriza, matrizb):
-        resultado = Matriz(matriza, matrizb)
+        resultado = Matriz(matriza.filas, matrizb.columnas)
         for i in range(matriza.filas):
             for j in range(matriza.columnas):
                 resultado.matriz[i][j] = matriza.matriz[i][j] + matrizb.matriz[i][j]
@@ -12,7 +12,7 @@ def sumar_matriz(matriza, matrizb):
 def restar_matriz(matriza, matrizb):
     from Clases.matriz import Matriz
     if validar_operaciones(matriza, matrizb):
-        resultado = Matriz(matriza, matrizb)
+        resultado = Matriz(matriza.filas, matrizb.columnas)
         for i in range(matriza.filas):
             for j in range(matriza.columnas):
                 resultado.matriz[i][j] = matriza.matriz[i][j] - matrizb.matriz[i][j]
